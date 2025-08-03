@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- fontawesome  file -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap  file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media css file -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-5">
+        <div class="container">
+          <div class="navbar-brand d-flex align-items-center text-white">
+            <a href="" class="me-3">
+              <img
+                src="images/logo.png"
+                alt="Logo"
+                class="d-inline-block align-text-top fs-3"
+              />
+            </a>
+            <div class="text">
+              <p class="mb-0 fw-bold">Weather</p>
+              <span class="opacity-75">tagline goes here</span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler rounded-circle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-center mt-4 mt-lg-0 rounded-4">
+              <li class="nav-item text-center">
+                <a
+                  class="nav-link active mx-2 py-3 py-lg-1"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link mx-2 py-3 py-lg-1" href="#">News</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link mx-2 py-3 py-lg-1" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link mx-2 py-3 py-lg-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link mx-2 py-3 py-lg-1" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="forecast py-5">
+      <div class="container">
+        <div class="forecast-search mb-5 position-relative">
+          <input
+            class="w-100 p-3 text-white"
+            type="search"
+            placeholder="Find your location..."
+          />
+          <button class="text-white border-0 rounded-5 position-absolute px-5">
+            Find
+          </button>
+        </div>
+        <div class="forecast-data">
+          <div class="row gx-0"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-8">
+            <div class="forecast-search position-relative">
+              <form>
+                <input
+                  class="w-100 p-3 text-white"
+                  type="email"
+                  placeholder="Email to subscribe..."
+                  name="mail"
+                />
+                <button
+                  class="text-white border-0 rounded-5 position-absolute px-5"
+                  type="submit"
+                >
+                  subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3 offset-lg-1">
+            <div class="social d-flex">
+              <a href="#" class="rounded-circle mx-1"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="rounded-circle mx-1"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="rounded-circle mx-1"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="rounded-circle mx-1"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <p class="mt-4 text-white-50">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

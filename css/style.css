@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-primary: #009ad8;
+  --color-main: #1e202b;
+  --color-secondry: #262936;
+}
+
+/* start navbar section */
+.navbar {
+  --bs-tertiary-bg-rgb: 30, 32, 43;
+}
+.navbar .navbar-brand {
+  --bs-navbar-brand-font-size: 1rem;
+}
+.navbar .navbar-brand span {
+  font-size: 0.75rem;
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .navbar-nav {
+  background-color: var(--color-secondry);
+}
+.navbar-nav .nav-item {
+  width: 100%;
+}
+.navbar-nav .nav-item:not(:last-child) {
+  border-bottom: 0.0625rem solid #3c3f4a;
+}
+.navbar-nav .nav-link {
+  --bs-navbar-nav-link-padding-x: 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+  border: 0.125rem solid transparent;
+  color: white;
+}
+.navbar-nav .nav-link.active {
+  --bs-navbar-active-color: var(--color-primary);
+}
+
+.navbar .navbar-toggler {
+  --bs-navbar-toggler-padding-y: 1rem;
+  --bs-navbar-toggler-padding-x: 1rem;
+  --bs-navbar-toggler-font-size: 1rem;
+  --bs-navbar-toggler-border-color: transparent;
+  --bs-navbar-color: white;
+  transition: 0.3s;
+}
+.navbar .navbar-toggler:hover {
+  --bs-navbar-toggler-border-color: var(--color-primary);
+  --bs-navbar-color: var(--color-primary);
+}
+.navbar .navbar-toggler:focus {
+  --bs-navbar-toggler-focus-width: 0;
+}
+/* end navbar section */
+
+/* start forecast section */
+.forecast {
+  background-color: var(--color-main);
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+}
+.forecast-search input {
+  background-color: var(--color-main);
+  border-radius: 10rem;
+  outline: unset;
+  border: unset;
+  font-size: 0.8rem;
+}
+.forecast-search button {
+  background-color: var(--color-primary);
+  font-size: 12px;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  bottom: 0.3125rem;
+}
+.forecast .forecast-data {
+  background-color: #323544;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.forecast .col-lg-4:nth-child(2) .box {
+  background-color: var(--color-secondry);
+}
+.forecast .box .forecast-header {
+  background-color: #2d303d;
+}
+.forecast .col-lg-4:nth-child(2) .box .forecast-header {
+  background-color: #222530;
+}
+.forecast .box .forecast-header p {
+  font-size: 0.875rem;
+}
+.forecast .box .forecast-content p:last-of-type {
+  color: var(--color-primary);
+}
+.forecast .box .degree p {
+  font-size: 4.375rem;
+}
+.forecast .box .degree img {
+  width: 5.625rem;
+  height: 5.625rem;
+}
+/* end forecast section */
+
+/* start footer section */
+footer {
+  background-color: var(--color-secondry);
+}
+footer .social a {
+  color: var(--color-primary);
+  background-color: var(--color-main);
+  text-decoration: none;
+}
+footer .social a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+footer .social i {
+  display: grid;
+  place-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+footer p {
+  font-size: 0.875rem;
+}
