@@ -43,7 +43,7 @@ function errorCallback(error) {
 async function getData(lat, lon) {
   try {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=a931219456ce4702b7a10723250208&q=${lat}&${lon}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=a931219456ce4702b7a10723250208&q=${lat}&${lon}&days=3`
     );
     let data = await response.json();
     display(data);
