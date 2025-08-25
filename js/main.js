@@ -23,35 +23,25 @@ const months = [
   "November",
   "December",
 ];
-//   write on input
+
 inputSearch.addEventListener("input", (e) => {
   getData(e.target.value);
 });
-//  user location
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-// data of location
-async function successCallback(position) {
-  const lat = position.coords.latitude;
-  const lon = position.coords.longitude;
-  getData(lat, lon);
-}
-// can't access the loaction
-function errorCallback(error) {
-  console.error("يرجى تشغيل خدمات الموقع", error.message);
-}
-// get data
-async function getData(lat, lon) {
+
+async function getData(country) {
   try {
     let response = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=a931219456ce4702b7a10723250208&q=${lat}&${lon}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=a931219456ce4702b7a10723250208&q=${
+        country ? country : "alex"
+      }&days=3`
     );
     let data = await response.json();
     display(data);
-    console.log(data);
   } catch (error) {
     console.log(error);
   }
 }
+getData();
 
 async function display(dataList) {
   let DayOne = new Date(dataList.forecast.forecastday[0].date);
